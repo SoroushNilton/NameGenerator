@@ -25,3 +25,16 @@ sorted(b.items(), key= lambda kv: kv[1], reverse=True)
 # sorted(b.items(), key= lambda kv: -kv[1]) # this and the one above are similar
 
 # %%
+import torch
+
+N = torch.zeros((28, 28), dtype= torch.int32)
+
+# %%
+all_letters = sorted((list(set(''.join(words)))))
+all_letters
+# %%
+stoi = {ch: i for i, ch in enumerate(all_letters)}
+# itos = {i: ch for i, ch in enumerate(all_letters)}
+# %%
+
+# %%
